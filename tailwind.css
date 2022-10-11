@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&family=Roboto:wght@400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .body {
+  }
+  .header {
+    @apply p-4 w-full;
+  }
+  .navbar {
+    @apply flex justify-between bg-white max-w-6xl mx-auto cursor-pointer;
+  }
+  .navbar__lists {
+    @apply flex gap-4 items-center text-dark-color font-normal text-base;
+  }
+  .title {
+    @apply pt-40 text-dark-color font-bold text-5xl;
+  }
+  .btn {
+    @apply bg-none border-transparent outline-none font-bold truncate px-1 py-2;
+  }
+  .header {
+    @apply bg-cover bg-none h-[200vh] bg-top;
+    background-image: url("/Assets/Images/Blur\ Gradient.png");
+  }
+  .btn--primary {
+    @apply bg-dark-color text-white rounded-md;
+  }
+  .gradient-title {
+    @apply font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-blur-blue to-gradient-blue;
+  }
+  .sales-layout {
+    @apply flex flex-col gap-8;
+  }
+  .sales-layout__contents {
+    @apply relative z-20 flex flex-col items-center text-center gap-4;
+  }
+  .sales-layout__tab {
+    @apply flex flex-col items-center gap-10;
+  }
+  .sales-layout__tab-control {
+    @apply flex max-w-[587px] px-12 py-2 justify-between bg-white-color rounded-xl;
+  }
+  .sales-layout__input {
+    @apply bg-white-color border-none outline-none;
+  }
+  .tittle--sm {
+    @apply text-center pt-6 text-4xl;
+  }
+  .middle-section__contents {
+    @apply flex flex-col gap-4 pt-4;
+  }
+  .middle-section__title {
+    @apply text-3xl font-bold;
+  }
+  .description {
+    @apply font-bold text-2xl leading-relaxed;
+  }
+  .middle-section__paragraph {
+    @apply font-normal text-base text-gray-900;
+  }
+  .btn--set {
+    @apply p-4;
+  }
+  .hero-section {
+    @apply mt-14 px-12 flex justify-between;
+  }
+  .hero-section__container {
+    @apply flex flex-col gap-4;
+  }
+  .hero-section__title {
+    @apply font-bold text-lg text-dark-color;
+  }
+  .team-layout {
+    @apply flex items-center pt-60 pb-60 gap-30;
+  }
+
+  .testimony-layout__member {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    padding: 80px;
+  }
+
+  .testimony-layout__card {
+    padding: 10px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(97, 153, 237, 0.26);
+    border-radius: 15px;
+  }
+
+  .testimony-layout__card-contents {
+    @apply flex flex-col gap-5 items-center p-5;
+  }
+
+  .testimony-layout__user-details {
+    @apply flex flex-col gap-2;
+  }
+
+  .testimony-layout__info {
+    @apply flex flex-col  gap-4;
+  }
+  .footer {
+    @apply bg-dark-color text-white-color;
+  }
+  .footer__content-container {
+    @apply flex flex-col py-10 px-12;
+  }
+  .footer__contents {
+    @apply flex justify-between;
+  }
+  .footer__socials {
+    @apply flex gap-2;
+  }
+  .footer__border {
+    width: 30%;
+    border: 1px solid #888888;
+    margin: 50px 0;
+  }
+  .footer__list-item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer__lists {
+    @apply flex flex-col gap-3;
+  }
+  .footer__title {
+    @apply font-bold text-base leading-6 mb-2;
+  }
+  .footer__item {
+    @apply font-semibold text-sm leading-6 text-gray-500 cursor-pointer;
+  }
+  .footer__emails {
+    @apply bg-white rounded flex;
+    border: 1px solid white;
+  }
+  .footer__input {
+    @apply h-full block;
+  }
+  .footer__item--sm {
+    @apply text-xs font-normal;
+  }
+  .header--sm {
+    height: 50vh;
+  }
+  .some-thesis {
+    @apply bg-gradient-to-r from-white-b to-slate-rose;
+  }
+  .some-thesis__description {
+    @apply flex flex-col gap-4 space-y-2 pt-20;
+  }
+  .services-layout {
+    @apply mt-10 flex flex-col items-center;
+    background-image: url("/Assets/Images/Blur\ Gradients.png");
+  }
+  .title--small {
+    @apply text-center py-20;
+  }
+  .gradient-title--sm {
+    @apply text-left;
+  }
+  .client-layout__container {
+    @apply flex justify-between p-40;
+  }
+  .client-layout__contents {
+    @apply flex flex-col gap-4  text-gray-900;
+  }
+  .client-layout__sub-title {
+    @apply h-32 font-bold text-5xl;
+  }
+  .client-layout__image {
+    @apply pr-40;
+  }
+  .client-layout__paragraph {
+    @apply h-24 not-italic font-normal text-base;
+  }
+  .price-section {
+    @apply flex flex-col items-center gap-6 text-center;
+  }
+  .price-section__title {
+    @apply font-bold text-5xl pt-20;
+  }
+  .btn-section {
+    @apply rounded-xl flex gap-6 p-2 text-base font-bold bg-gray-300;
+  }
+
+  .btn-section__key {
+    @apply pl-10 pr-6 pt-3 pb-3;
+  }
+
+  .btn-section__key--dark {
+    @apply bg-gray-900 rounded-xl opacity-10 text-white-color;
+  }
+  .price-section__card {
+    @apply w-full h-full p-10 antialiased text-gray-900;
+  }
+  .pricing-section__container {
+    @apply px-4 mx-auto;
+  }
+  .pricing-section__items {
+    @apply grid grid-cols-1 gap-10 pt-8 md:grid-cols-2 lg:grid-cols-3 justify-evenly;
+  }
+  .pricing-section__contents {
+    @apply w-full pt-6 pb-2 overflow-hidden text-center bg-white border rounded-2xl;
+  }
+  .pricing-section__title {
+    @apply flex justify-center w-full py-3 gap-3 border-b;
+  }
+  .pricing-section__lists {
+    @apply flex text-sm sm:justify-center lg:justify-center;
+  }
+  .pricing-section__product {
+    @apply flex w-full my-4;
+  }
+  .pricing-section__paragraph {
+    @apply text-center p-4;
+  }
+  .price-section__button {
+    @apply text-sm rounded-full  bg-dark-color  text-white flex  justify-center items-center  w-40 h-12 mx-auto;
+  }
+  .pricing-section__contents--content {
+    @apply bg-slate-green border border-blue;
+  }
+  .frequent-section {
+    @apply text-dark-color ml-auto mr-auto pl-12 pr-12 pt-16 pb-16 w-full;
+  }
+
+  .frequent__container {
+    @apply bg-opacity-100 flex rounded-xl bg-Sky-blue gap-1 p-12;
+  }
+  .frequent__title {
+    @apply text-5xl font-bold;
+  }
+  .frequent__header {
+    @apply flex flex-col gap-8  bg-opacity-100;
+  }
+  .frequent__subtitle {
+    @apply opacity-80 text-base font-normal;
+  }
+  .questions-layout {
+    @apply flex flex-col gap-6;
+  }
+  .questions-layout__container {
+    @apply flex flex-col justify-center gap-12 rounded-lg p-8 bg-white-color bg-opacity-100;
+  }
+  .questions__card {
+    @apply flex justify-between;
+  }
+
+  .questions__title {
+    @apply bg-opacity-100 text-2xl font-bold;
+  }
+
+  .questions__answer {
+    @apply bg-opacity-100 font-normal text-dark-color opacity-80;
+  }
+  .about-section {
+    @apply max-w-full;
+  }
+  .about-section {
+    @apply ml-auto mr-auto pl-12 pr-12 pt-16 pb-16;
+  }
+
+  .about-section__container {
+    @apply flex flex-col items-center gap-8 text-center;
+  }
+  .about-section__title {
+    @apply text-5xl font-bold bg-opacity-100 bg-white-color;
+  }
+  .about-section__subtitle {
+    @apply w-3/5 text-lg font-normal;
+  }
+  .about-section__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+  .about-us {
+    @apply flex flex-col items-center pt-16 pb-16 text-center;
+  }
+
+  .about-us__title {
+    @apply text-2xl font-bold fill-transparent text-clip bg-clip-text;
+  }
+  .about-us__subtitle {
+    @apply bg-opacity-100 text-5xl font-bold;
+  }
+
+  .about-us__text {
+    @apply w-3/5 text-center font-normal bg-opacity-100;
+  }
+  .about-us__content {
+    @apply flex flex-col items-center gap-6;
+  }
+  .goal-vision {
+    @apply grid gap-12 p-12;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    --tw-bg-opacity: 1;
+    background-color: rgb(240 242 254 / var(--tw-bg-opacity));
+  }
+
+  .goal-vision__title {
+    @apply text-clip fill-transparent bg-clip-text text-2xl font-bold;
+  }
+  .goal-vision__subtitle {
+    @apply text-5xl font-bold;
+  }
+
+  .goal-vision__paragraph {
+    @apply bg-opacity-100  text-base font-normal;
+  }
+  .goal-vision__item {
+    @apply flex flex-col gap-8;
+  }
+  .values {
+    @apply w-full;
+  }
+  .values {
+    @apply ml-auto mr-auto flex flex-col items-center gap-12 pl-12 pr-12 pt-12 pb-12;
+  }
+  .values__title {
+    @apply text-5xl font-bold bg-opacity-100;
+  }
+  .values__list {
+    @apply  gap-6 rounded-lg p-12 right-0 flex justify-between items-center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .values__menus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .values__list__item--with-b {
+    border-right-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(147 197 253 / var(--tw-border-opacity));
+  }
+
+  .values__description {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    --tw-text-opacity: 1;
+    color: rgb(29 33 48 / var(--tw-text-opacity));
+  }
+
+  .values__description-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    --tw-text-opacity: 1;
+    color: rgb(29 33 48 / var(--tw-text-opacity));
+  }
+  .team {
+    width: 100%;
+  }
+  .team {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .team__header {
+    width: 40%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .team__members {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .team__title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .team__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    --tw-text-opacity: 1;
+    color: rgb(29 33 48 / var(--tw-text-opacity));
+    opacity: 0.87;
+  }
+
+  .team__card {
+    border-radius: 12px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  }
+  .team__name {
+    font-size: 24px;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(29 33 48 / var(--tw-text-opacity));
+  }
+  .team__description {
+    @apply flex flex-col items-center py-2;
+  }
+  .team__job {
+    font-size: 16px;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(29 33 48 / var(--tw-text-opacity));
+    opacity: 0.9;
+  }
+
+}
