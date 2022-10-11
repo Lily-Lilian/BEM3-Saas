@@ -38,6 +38,9 @@
   .sales-layout__contents {
     @apply relative z-20 flex flex-col items-center text-center gap-4;
   }
+  .sales-layout__image {
+    @apply max-w-3xl mt-4;
+  }
   .sales-layout__tab {
     @apply flex flex-col items-center gap-10;
   }
@@ -50,8 +53,20 @@
   .tittle--sm {
     @apply text-center pt-6 text-4xl;
   }
+  .middle-section {
+    @apply mt-10;
+  }
+  .middle-section__container {
+    @apply flex flex-col items-center;
+  }
+  .middle-section__card {
+    @apply max-w-6xl mx-auto grid grid-cols-3 bg-[rgba(224,228,252,0.5)] p-16 gap-8 rounded-xl mt-5;
+  }
   .middle-section__contents {
     @apply flex flex-col gap-4 pt-4;
+  }
+  .middle-section__item{
+    @apply border-r;
   }
   .middle-section__title {
     @apply text-3xl font-bold;
@@ -71,8 +86,23 @@
   .hero-section__container {
     @apply flex flex-col gap-4;
   }
+  .hero-section__lists {
+    @apply flex flex-col gap-6 mt-10;
+  }
+  .hero-section__item {
+    @apply flex items-center gap-2;
+  }
   .hero-section__title {
     @apply font-bold text-lg text-dark-color;
+  }
+  .impression-layout {
+    @apply flex justify-between px-12 mt-20 bg-gradient-to-l from-slate-blue to-Sky-blue;
+  }
+  .impression-layout__container{
+    @apply flex flex-col items-center gap-4 py-20;
+  }
+  .impression-layout__logos{
+    @apply mt-8 mx-auto py-4 flex justify-between max-w-6xl;
   }
   .team-layout {
     @apply flex items-center pt-60 pb-60 gap-30;
@@ -105,6 +135,9 @@
 
   .testimony-layout__info {
     @apply flex flex-col  gap-4;
+  }
+  .view-price__container {
+    @apply flex flex-col items-center gap-3 justify-center text-center pb-20;
   }
   .footer {
     @apply bg-dark-color text-white-color;
@@ -145,6 +178,9 @@
   }
   .footer__item--sm {
     @apply text-xs font-normal;
+  }
+  .footer__bottom {
+    @apply flex gap-6;
   }
   .header--sm {
     height: 50vh;
@@ -328,7 +364,7 @@
     @apply text-5xl font-bold bg-opacity-100;
   }
   .values__list {
-    @apply  gap-6 rounded-lg p-12 right-0 flex justify-between items-center;
+    @apply gap-6 rounded-lg p-12 right-0 flex justify-between items-center;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -425,5 +461,4 @@
     color: rgb(29 33 48 / var(--tw-text-opacity));
     opacity: 0.9;
   }
-
 }
