@@ -65,7 +65,7 @@
   .middle-section__contents {
     @apply flex flex-col gap-4 pt-4;
   }
-  .middle-section__item{
+  .middle-section__item {
     @apply border-r;
   }
   .middle-section__title {
@@ -98,10 +98,10 @@
   .impression-layout {
     @apply flex justify-between px-12 mt-20 bg-gradient-to-l from-slate-blue to-Sky-blue;
   }
-  .impression-layout__container{
+  .impression-layout__container {
     @apply flex flex-col items-center gap-4 py-20;
   }
-  .impression-layout__logos{
+  .impression-layout__logos {
     @apply mt-8 mx-auto py-4 flex justify-between max-w-6xl;
   }
   .team-layout {
@@ -190,6 +190,12 @@
   }
   .some-thesis__description {
     @apply flex flex-col gap-4 space-y-2 pt-20;
+  }
+  .some-thesis__btn {
+    @apply flex gap-6;
+  }
+  .some-thesis__logos{
+    @apply py-4 px-6 flex max-w-4xl gap-8;
   }
   .services-layout {
     @apply mt-10 flex flex-col items-center;

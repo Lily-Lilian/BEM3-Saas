@@ -978,6 +978,21 @@ video {
   padding-top: 5rem;
 }
 
+.some-thesis__btn{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.some-thesis__logos{
+  display: flex;
+  max-width: 56rem;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .services-layout{
   margin-top: 2.5rem;
   display: flex;
@@ -1497,17 +1512,8 @@ video {
   opacity: 0.9;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
 }
 
 .mt-5{
@@ -1582,10 +1588,6 @@ video {
 .bg-slate-pink{
   --tw-bg-opacity: 1;
   background-color: rgb(249 240 251 / var(--tw-bg-opacity));
-}
-
-.p-6{
-  padding: 1.5rem;
 }
 
 .p-20{
