@@ -563,7 +563,7 @@ video {
   background-image: url("/Assets/Images/Blur\ Gradient.png");
 }
 
-.navbar{
+.header__navbar{
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -573,13 +573,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.navbar__container{
+.header__navbar-container{
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
 }
 
-.navbar__lists{
+.header__navbar-lists{
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -590,8 +590,8 @@ video {
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.navbar__btn, 
-  .sales-layout__btn{
+.header__navbar-btn, 
+  .header__sales-btn{
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
@@ -603,22 +603,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.sales-layout{
+.header__sales{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.sales-layout__title{
-  padding-top: 10rem;
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(29 33 48 / var(--tw-text-opacity));
-}
-
-.sales-layout__contents{
+.header__sales-contents{
   position: relative;
   z-index: 20;
   display: flex;
@@ -628,19 +619,28 @@ video {
   text-align: center;
 }
 
-.sales-layout__image{
-  margin-top: 1rem;
-  max-width: 48rem;
+.header__sales-title{
+  padding-top: 10rem;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.sales-layout__tab{
+.header__sales-image{
+  margin-top: 1rem;
+  max-width: 56rem;
+}
+
+.header__sales-tab{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
 }
 
-.sales-layout__tab-control{
+.header__sales-tabcontrol{
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -655,7 +655,7 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.sales-layout__input{
+.header__sales-input{
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -753,12 +753,6 @@ video {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.discover-section_contents{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .why-us__item, 
