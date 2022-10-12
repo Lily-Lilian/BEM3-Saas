@@ -5,7 +5,7 @@
 
 @layer components {
   .header {
-    @apply p-4 w-full bg-cover bg-none h-[200vh] bg-top;
+    @apply p-4 w-full bg-cover bg-none  bg-top;
     background-image: url("/Assets/Images/Blur\ Gradient.png");
   }
   .header__navbar {
@@ -18,10 +18,11 @@
     @apply flex gap-4 items-center text-dark-color font-normal text-base;
   }
   .header__navbar-btn,
-  .header__sales-btn {
+  .header__sales-btn,
+  .some-thesis__btn--primary {
     @apply bg-dark-color text-white rounded-md px-4 py-2;
   }
-  .header__sales{
+  .header__sales {
     @apply flex flex-col gap-8;
   }
   .header__sales-contents {
@@ -42,28 +43,35 @@
   .header__sales-input {
     @apply bg-white-color border-none outline-none;
   }
-  .solution-layout,.features-layout {
+  .solution-layout,
+  .features-layout {
     @apply py-2;
   }
-  .solution-layout__title,.features-layout__big-title{
+  .solution-layout__title,
+  .features-layout__big-title {
     @apply font-bold text-transparent text-xl bg-clip-text  text-center bg-gradient-to-r from-blur-blue to-gradient-blue;
   }
   .solution-layout__sub-title {
     @apply font-bold text-2xl text-center py-2;
   }
-  .solution-layout__container,.features-layout__container {
+  .solution-layout__container,
+  .features-layout__container {
     @apply flex flex-col items-center;
   }
-  .solution-layout__card, .features-layout__card {
+  .solution-layout__card,
+  .features-layout__card {
     @apply max-w-6xl mx-auto grid grid-cols-3 bg-[rgba(224,228,252,0.5)] p-16 gap-8 rounded-xl mt-5;
   }
-  .solution-layout__contents,.features-layout__contents {
+  .solution-layout__contents,
+  .features-layout__contents {
     @apply flex flex-col gap-4 pt-4;
   }
-  .solution-layout__item,.features-layout__item {
+  .solution-layout__item,
+  .features-layout__item {
     @apply border-r;
   }
-  .solution-layout__text-title,.features-layout__title {
+  .solution-layout__text-title,
+  .features-layout__title {
     @apply text-2xl font-bold text-dark-color;
   }
   .solution-layout__paragraph {
@@ -166,6 +174,9 @@
   }
   .some-thesis {
     @apply bg-gradient-to-r from-white-b to-slate-rose;
+  }
+  .some-thesis__contents {
+    @apply flex justify-between px-6 py-4 mt-5;
   }
   .some-thesis__description {
     @apply flex flex-col gap-4 space-y-2 pt-20;
