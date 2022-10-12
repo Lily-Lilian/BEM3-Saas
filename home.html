@@ -9,10 +9,14 @@
   </head>
   <body>
     <header class="header">
-      <div class="navbar-container">
-        <nav class="navbar">
+      <nav class="navbar">
+        <div class="navbar__container">
           <div class="navbar__logo">
-            <img src="./Assets/Images/Vector.svg" alt="Vector" />
+            <img
+              class="navbar__vector"
+              src="./Assets/Images/Vector.svg"
+              alt="Vector"
+            />
           </div>
           <ul class="navbar__lists">
             <li class="navbar__item"><a href="home.html"> Home</a></li>
@@ -21,13 +25,13 @@
             <li class="navbar__item"><a href="about.html"> About us</a></li>
             <li class="navbar__item"><a href="blog.html">Blog</a></li>
             <li class="navbar__item"><a href="contact.html">contact</a></li>
-            <div class="btn btn--primary"><button>Free trial</button></div>
+            <button class="navbar__btn">Free trial</button>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
       <section class="sales-layout">
         <div class="sales-layout__contents">
-          <h1 class="title">
+          <h1 class="sales-layout__title">
             The Best Software to Grow <br />
             your Sales and Services
           </h1>
@@ -44,7 +48,7 @@
               class="sales-layout__input"
               placeholder="Your Email"
             />
-            <button class="btn btn--primary">Get Free trial</button>
+            <button class="sales-layout__btn">Get Free trial</button>
           </div>
 
           <img
@@ -55,82 +59,92 @@
         </div>
       </section>
     </header>
-    <section class="middle-section">
-      <div class="middle-section__container">
-        <div class="gradient-title">High-quality</div>
-        <div class="title tittle--sm">
+    <section class="solution-layout">
+      <div class="solution-layout__container">
+        <div class="solution-layout__title">High-quality</div>
+        <div class="solution-layout__sub-title">
           We have the Best Solution for<br />
           your Business
         </div>
       </div>
-      <div class="middle-section__card">
-        <div class="middle-section__item">
+      <div class="solution-layout__card">
+        <div class="solution-layout__item">
           <img src="./Assets/Images/Subtract.svg" alt="substract" />
-          <h1 class="middle-section__title">
+          <h1 class="solution-layout__text-title">
             High security to protect from piracy
           </h1>
-          <p class="middle-section__paragraph">
+          <p class="solution-layout__paragraph">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
-        <div class="middle-section__item">
+        <div class="solution-layout__item">
           <img src="./Assets/Images/Icon 2.svg" alt="icon" />
-          <h1 class="middle-section__title">
+          <h1 class="solution-layout__text-title">
             High security to protect from piracy
           </h1>
-          <p class="middle-section__paragraph">
+          <p class="solution-layout__paragraph">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
-        <div class="middle-section__item">
+        <div class="solution-layout__item">
           <img src="./Assets/Images/Icon 3.svg" alt="icon" />
-          <h1 class="middle-section__title">
+          <h1 class="solution-layout__text-title">
             High security to protect from piracy
           </h1>
-          <p class="middle-section__paragraph">
+          <p class="solution-layout__paragraph">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
       </div>
     </section>
-    <section class="hero-section">
-      <div class="hero-section__container">
-        <h2 class="gradient-title gradient-title--left">
-          Why should you work with us?
-        </h2>
-        <h1 class="description">
+    <section class="why-us">
+      <div class="why-us__container">
+        <h2 class="why-us__title">Why should you work with us?</h2>
+        <h1 class="why-us__sub-title">
           To upscale your business<br />
           to the next level
         </h1>
-        <p class="hero-section__paragraph">
+        <p class="why-us__paragraph">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy<br />
           eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
           diam <br />voluptua invidunt ut labore.
         </p>
       </div>
-      <div>
-        <ul class="hero-section__lists">
-          <li class="hero-section__item">
-            <img src="./Assets/Images/Arrow.svg" alt="vector" />
-            <p class="hero-section__paragraph">
+      <div class="why-us__contents-container">
+        <ul class="why-us__lists">
+          <li class="why-us__item">
+            <img
+              class="why-us__image"
+              src="./Assets/Images/Arrow.svg"
+              alt="vector"
+            />
+            <p class="why-us__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod.
             </p>
           </li>
-          <li class="hero-section__item">
-            <img src="./Assets/Images/Arrow.svg" alt="vector" />
-            <p class="hero-section__paragraph">
+          <li class="why-us__item">
+            <img
+              class="why-us__image"
+              src="./Assets/Images/Arrow.svg"
+              alt="vector"
+            />
+            <p class="why-us__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod.
             </p>
           </li>
-          <li class="hero-section__item">
-            <img src="./Assets/Images/Arrow.svg" alt="vector" />
-            <p class="hero-section__paragraph">
+          <li class="why-us__item">
+            <img
+              class="why-us__image"
+              src="./Assets/Images/Arrow.svg"
+              alt="vector"
+            />
+            <p class="why-us__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod.
             </p>
@@ -141,7 +155,9 @@
     <section class="impression-layout">
       <div class="impression-layout__container">
         <div class="impression-layout__contents">
-          <h1 class="description">More impressions, more conversions</h1>
+          <h1 class="impression-layout__title">
+            More impressions, more conversions
+          </h1>
           <p class="impression-layout__paragraph">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy<br />
@@ -149,95 +165,130 @@
             diam voluptua <br />invidunt ut labore.
           </p>
         </div>
-        <button class="btn btn--primary">Get Free trial</button>
+        <button class="impression-layout__btn">Get Free trial</button>
       </div>
-      <img class="py-24" src="./Assets/Images/Image.png" alt="backg" />
+      <img
+        class="impression-layout__image"
+        src="./Assets/Images/Image.png"
+        alt="backg"
+      />
     </section>
     <div class="impression-layout__logos">
-      <img src="./Assets/Images/Logo 1.svg" alt="logo" />
-      <img src="./Assets/Images/Logo 2.svg" alt="logo" />
-      <img src="./Assets/Images/Logo 3.svg" alt="logo" />
-      <img src="./Assets/Images/Logo 4.svg" alt="logo" />
-      <img src="./Assets/Images/Logo 5.svg" alt="logo" />
+      <img
+        class="impression-layout__logo"
+        src="./Assets/Images/Logo 1.svg"
+        alt="logo"
+      />
+      <img
+        class="impression-layout__logo"
+        src="./Assets/Images/Logo 2.svg"
+        alt="logo"
+      />
+      <img
+        class="impression-layout__logo"
+        src="./Assets/Images/Logo 3.svg"
+        alt="logo"
+      />
+      <img
+        class="impression-layout__logo"
+        src="./Assets/Images/Logo 4.svg"
+        alt="logo"
+      />
+      <img
+        class="impression-layout__logo"
+        src="./Assets/Images/Logo 5.svg"
+        alt="logo"
+      />
     </div>
-    <section class="hero-section">
-      <div class="hero-section__container">
-        <h2 class="gradient-title">Discover More</h2>
-        <h1 class="description">
+    <section class="discover-section">
+      <div class="discover-section__container">
+        <h2 class="discover-section__title">Discover More</h2>
+        <h1 class="discover-section__description">
           Analyze your sales and<br />
           marketing leads
         </h1>
-        <p class="hero-section__paragraph">
+        <p class="discover-section__paragraph">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy<br />
           eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
           diam <br />voluptua invidunt ut labore.
         </p>
       </div>
-      <ul class="hero-section__lists">
-        <li class="hero-section__item">
+      <div class="discover-section__lists">
+        <div class="discover-section__lists-container">
+          <ul class="discover-section__lists-contents">
+          <li class="discover-section__item">
+            <img
+              class="discover-section_image"
+              src="./Assets/Images/Feature Icon with circle.png"
+              alt="vector"
+            />
+            <div class="discover-section_contents">
+              <h1 class="discover-section _title">Sales Tracking</h1>
+              <p class="discover-section__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elitr
+              </p>
+            </div>
+          </li>
+          </ul>
+        </div>
+        <li class="discover-section_item">
           <img
-            class="hero-section__image"
-            src="./Assets/Images/Feature Icon with circle.png"
-            alt="vector"
-          />
-          <div class="hero-section__contents">
-            <h1 class="hero-section__title">Sales Tracking</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitr</p>
-          </div>
-        </li>
-        <li class="hero-section__item">
-          <img
-            class="hero-section__image"
+            class="discover-section_image"
             src="./Assets/Images/Feature Icon with circle (1).png"
             alt="vector"
           />
-          <div class="hero-section__contents">
-            <h1 class="hero-section__title">Project Management</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitr</p>
+          <div class="discover-section_contents">
+            <h1 class="discover-section_title">Project Management</h1>
+            <p class="discover-section__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elitr
+            </p>
           </div>
         </li>
-        <li class="hero-section__item">
+        <li class="discover-section_item">
           <img
             src="./Assets/Images/Feature Icon with circle (2).png"
             alt="vector"
           />
-          <div class="hero-section__contents">
-            <h1 class="hero-section__title">Activity Report</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitr</p>
+          <div class="discover-section_contents">
+            <h1 class="discover-section_title">Activity Report</h1>
+            <p class="discover-section__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elitr
+            </p>
           </div>
         </li>
       </ul>
+      </div>
     </section>
-    <section class="middle-section">
-      <div class="title">Features</div>
-      <div class="middle-section__card">
-        <div class="middle-section__item">
+    <section class="solution-layout">
+      <div class="solution-layout__big-title">Features</div>
+      <div class="solution-layout__card">
+        <div class="solution-layout__item">
           <img src="./Assets/Images/Icon@2x.png" alt="images" />
-          <h1 class="middle-section__title">
+          <h1 class="solution-layout__title">
             High security to protect from piracy
           </h1>
-          <p class="middle-section__paragraph">
+          <p class="solution-layout__paragraph">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
-        <div class="middle-section__item">
+        <div class="solution-layout__item">
           <img src="./Assets/Images/Icon@2x.png" alt="images " />
-          <h1 class="middle-section__title">
+          <h1 class="solution-layout__title">
             High security to protect from piracy
           </h1>
-          <p class="middle-section__paragraph">
+          <p class="solution-layout__paragraph">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
-        <div class="middle-section__item">
+        <div class="solution-layout__item">
           <img src="./Assets/Images/Icon@2x.png" alt="images" />
-          <h1 class="middle-section__title">
+          <h1 class="solution-layout__title">
             High security to protect from piracy
           </h1>
-          <p class="middle-section__paragraph">
+          <p class="solution-layout__paragraph">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
@@ -245,12 +296,12 @@
       </div>
     </section>
     <section class="testimony-layout">
-      <div class="title pt-6 text-center">
+      <div class="testimony-layout__title">
         The stunning results our<br />
         customers have experienced
       </div>
       <div class="testimony-layout__member">
-        <div class="testimony-layout__card">
+        <div class="testimony-layout__cards">
           <div class="testimony-layout__card-contents">
             <div class="testimony-layout__paragraph">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -272,7 +323,7 @@
             </div>
           </div>
         </div>
-        <div class="testimony-layout__card">
+        <div class="testimony-layout__cards">
           <div class="testimony-layout__card-contents">
             <div class="testimony-layout__paragraph">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -294,7 +345,7 @@
             </div>
           </div>
         </div>
-        <div class="testimony-layout__card">
+        <div class="testimony-layout__cards">
           <div class="testimony-layout__card-contents">
             <div class="testimony-layout__paragraph">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -304,9 +355,9 @@
             <div class="testimony-layout__info">
               <div>
                 <img
+                  class="testimony-layout__image"
                   src="./assets/Images/photography-of-a-guy-wearing-green-shirt-1222271.svg"
-                  alt=""
-                  class="avatar"
+                  alt="avatar"
                 />
               </div>
               <div class="testimony-layout__user-details">
@@ -320,14 +371,14 @@
     </section>
     <section class="view-price">
       <div class="view-price__container">
-        <h1 class="description">
+        <h1 class="view-price__title">
           Are you ready to grow your <br />business with us?
         </h1>
         <p class="view-price__paragraph">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy.
         </p>
-        <button class="btn btn--primary">View pricing</button>
+        <button class="view-price__btn">View pricing</button>
       </div>
     </section>
     <footer class="footer">
