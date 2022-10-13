@@ -945,6 +945,11 @@ video {
   gap: 1.5rem;
 }
 
+.footer__socials{
+  display: flex;
+  align-items: center;
+}
+
 .some-thesis{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #FFFFFF;
@@ -1524,21 +1529,17 @@ video {
   align-items: center;
 }
 
-.gap-6{
-  gap: 1.5rem;
-}
-
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.pt-9{
-  padding-top: 2.25rem;
 }
 
 .pb-2{
@@ -1547,6 +1548,10 @@ video {
 
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.pt-9{
+  padding-top: 2.25rem;
 }
 
 .text-center{

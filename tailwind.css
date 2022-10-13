@@ -45,7 +45,7 @@
   }
   .solution-layout,
   .features-layout {
-    @apply py-2;
+    @apply py-2; 
   }
   .solution-layout__title,
   .features-layout__big-title {
@@ -98,8 +98,9 @@
   }
   .why-us__title,
   .discover-section__title {
-    @apply font-bold text-lg text-dark-color;
+    @apply  font-bold text-lg text-dark-color;
   }
+  
   .impression-layout {
     @apply flex justify-between px-12 mt-20 bg-gradient-to-l from-slate-blue to-Sky-blue;
   }
@@ -171,6 +172,9 @@
   }
   .footer__bottom {
     @apply flex gap-6;
+  }
+  .footer__socials{
+    @apply flex items-center;
   }
   .some-thesis {
     @apply bg-gradient-to-r from-white-b to-slate-rose;
