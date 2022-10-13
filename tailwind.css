@@ -18,8 +18,7 @@
     @apply flex gap-4 items-center text-dark-color font-normal text-base;
   }
   .header__navbar-btn,
-  .header__sales-btn,
-  .some-thesis__btn--primary {
+  .header__sales-btn {
     @apply bg-dark-color text-white rounded-md px-4 py-2;
   }
   .header__sales {
@@ -45,14 +44,16 @@
   }
   .solution-layout,
   .features-layout {
-    @apply py-2;
+    @apply py-8;
   }
-  .solution-layout__title,
-  .features-layout__big-title {
+  .solution-layout__title {
     @apply font-bold text-transparent text-xl bg-clip-text  text-center bg-gradient-to-r from-blur-blue to-gradient-blue;
   }
-  .solution-layout__sub-title {
-    @apply font-bold text-2xl text-center py-2;
+  .solution-layout__sub-title,
+  .features-layout__big-title,
+  .testimony-layout__title,
+  .view-price__title {
+    @apply font-bold text-3xl text-center py-2;
   }
   .solution-layout__container,
   .features-layout__container {
@@ -70,7 +71,7 @@
   }
   .solution-layout__item,
   .features-layout__item {
-    @apply border-r;
+    @apply border-r flex flex-col gap-3;
   }
   .solution-layout__text-title,
   .features-layout__title {
@@ -81,48 +82,61 @@
   }
   .why-us,
   .discover-section {
-    @apply mt-14 px-12 flex justify-between;
+    @apply px-12 py-10 flex justify-between items-center;
   }
-  .why-us__container,
-  .discover-section__container {
-    @apply flex flex-col gap-4;
-  }
-  .why-us__lists,
-  .discover-section__lists {
-    @apply flex flex-col gap-4 mt-10;
-  }
-  .discover-section_contents {
-    @apply flex flex-col items-center;
-  }
-  .why-us__item,
-  .discover-section__item {
-    @apply flex items-center gap-2;
+  .why-us__container {
+    @apply flex flex-col gap-2 px-4;
   }
   .why-us__title,
   .discover-section__title {
-    @apply font-bold text-lg text-dark-color;
+    @apply font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-blur-blue to-gradient-blue;
   }
-
+  .why-us__sub-title,
+  .impression-layout__title,
+  .discover-section__description {
+    @apply font-bold text-4xl text-gray-900;
+  }
+  .why-us__paragraph,
+  .impression-layout__paragraph {
+    @apply py-4 font-normal text-base text-gray-900;
+  }
+  .why-us__lists,
+  .discover-section__lists {
+    @apply flex flex-col pt-12 mx-auto;
+  }
+  .discover-section__container {
+    @apply flex flex-col gap-4;
+  }
+  .discover-section_contents {
+    @apply flex flex-col items-center gap-4;
+  }
+  .discover-section__lists-contents {
+    @apply flex flex-col gap-4;
+  }
+  .why-us__item,
+  .discover-section__item {
+    @apply flex items-center gap-4;
+  }
   .impression-layout {
     @apply flex justify-between px-12 mt-20 bg-gradient-to-l from-slate-blue to-Sky-blue;
   }
   .impression-layout__container {
     @apply flex flex-col items-center gap-4 py-20;
   }
+  .impression-layout__btn {
+    @apply bg-dark-color text-white mt-4 rounded-xl px-6 py-2;
+  }
+  .impression-layout__image {
+    @apply max-w-xl py-12 px-12;
+  }
   .impression-layout__logos {
-    @apply mt-8 mx-auto py-4 flex justify-between max-w-6xl;
+    @apply py-6 flex justify-between max-w-6xl mx-auto;
   }
-  .team-layout {
-    @apply flex items-center pt-60 pb-60 gap-30;
+  .testimony-layout__members {
+    @apply grid grid-cols-3 gap-6 max-w-5xl py-4 mx-auto;
   }
-  .testimony-layout__title {
-    @apply pt-6 text-center;
-  }
-  .testimony-layout__member {
-    @apply grid grid-cols-3 gap-5 pt-10 mx-auto;
-  }
-  .testimony-layout__card {
-    @apply px-3 py-8 bg-white-color flex flex-col border border-gray-700 opacity-20 rounded-md;
+  .testimony-layout__cards {
+    @apply px-2 py-8 flex flex-col border border-background-color rounded-md;
   }
   .testimony-layout__card-contents {
     @apply flex flex-col gap-5 items-center p-5;
@@ -133,8 +147,15 @@
   .testimony-layout__info {
     @apply flex flex-col  gap-4;
   }
+  .view-price{
+    @apply flex flex-col gap-6 items-center py-8 mt-10;
+    background-image: url("/Assets/Images/Blur\ Gradient.png");
+  }
   .view-price__container {
     @apply flex flex-col items-center gap-3 justify-center text-center pb-20;
+  }
+  .view-price__btn{
+   @apply bg-gray-900 rounded-xl px-4 py-2 text-white-color;
   }
   .footer {
     @apply bg-dark-color text-white-color;
@@ -296,7 +317,6 @@
   .about-section {
     @apply ml-auto mr-auto pl-12 pr-12 pt-16 pb-16;
   }
-
   .about-section__container {
     @apply flex flex-col items-center gap-8 text-center;
   }

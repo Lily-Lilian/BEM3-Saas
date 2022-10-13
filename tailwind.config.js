@@ -16,7 +16,9 @@ module.exports = {
         "blue": "#8579ff",
         "sky-blues": "#F0F2FE",
         "blur-blue":"#3863FD",
-        "gradient-blue":"#CDECFE"
+        "gradient-blue":"#CDECFE",
+        "background-color":"#6199ED",
+        
       },
     },
   },
