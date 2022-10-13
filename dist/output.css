@@ -702,7 +702,8 @@ video {
 }
 
 .solution-layout__card, 
-  .features-layout__card{
+  .features-layout__card, 
+  .service-layout__cards{
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.25rem;
@@ -713,6 +714,15 @@ video {
   border-radius: 0.75rem;
   background-color: rgba(224,228,252,0.5);
   padding: 4rem;
+}
+
+.solution-layout__contents, 
+  .features-layout__contents, 
+  .service-layout__contents{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
 }
 
 .solution-layout__item, 
@@ -950,7 +960,7 @@ video {
   align-items: center;
 }
 
-.some-thesis{
+.sales{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #FFFFFF;
   --tw-gradient-to: rgb(255 255 255 / 0);
@@ -958,7 +968,7 @@ video {
   --tw-gradient-to: #EBF6F9;
 }
 
-.some-thesis__contents{
+.sales__contents{
   margin-top: 1.25rem;
   display: flex;
   justify-content: space-between;
@@ -968,28 +978,28 @@ video {
   padding-bottom: 1rem;
 }
 
-.some-thesis__description{
+.sales__description{
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.some-thesis__description > :not([hidden]) ~ :not([hidden]){
+.sales__description > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.some-thesis__description{
+.sales__description{
   padding-top: 5rem;
 }
 
-.some-thesis__btn{
+.sales__btn{
   display: flex;
   gap: 1.5rem;
 }
 
-.some-thesis__logos{
+.sales__logos{
   display: flex;
   max-width: 56rem;
   gap: 2rem;

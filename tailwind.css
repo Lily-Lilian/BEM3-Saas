@@ -45,7 +45,7 @@
   }
   .solution-layout,
   .features-layout {
-    @apply py-2; 
+    @apply py-2;
   }
   .solution-layout__title,
   .features-layout__big-title {
@@ -59,11 +59,13 @@
     @apply flex flex-col items-center;
   }
   .solution-layout__card,
-  .features-layout__card {
+  .features-layout__card,
+  .service-layout__cards {
     @apply max-w-6xl mx-auto grid grid-cols-3 bg-[rgba(224,228,252,0.5)] p-16 gap-8 rounded-xl mt-5;
   }
   .solution-layout__contents,
-  .features-layout__contents {
+  .features-layout__contents,
+  .service-layout__contents {
     @apply flex flex-col gap-4 pt-4;
   }
   .solution-layout__item,
@@ -98,9 +100,9 @@
   }
   .why-us__title,
   .discover-section__title {
-    @apply  font-bold text-lg text-dark-color;
+    @apply font-bold text-lg text-dark-color;
   }
-  
+
   .impression-layout {
     @apply flex justify-between px-12 mt-20 bg-gradient-to-l from-slate-blue to-Sky-blue;
   }
@@ -173,22 +175,22 @@
   .footer__bottom {
     @apply flex gap-6;
   }
-  .footer__socials{
+  .footer__socials {
     @apply flex items-center;
   }
-  .some-thesis {
+  .sales {
     @apply bg-gradient-to-r from-white-b to-slate-rose;
   }
-  .some-thesis__contents {
+  .sales__contents {
     @apply flex justify-between px-6 py-4 mt-5;
   }
-  .some-thesis__description {
+  .sales__description {
     @apply flex flex-col gap-4 space-y-2 pt-20;
   }
-  .some-thesis__btn {
+  .sales__btn {
     @apply flex gap-6;
   }
-  .some-thesis__logos {
+  .sales__logos {
     @apply py-4 px-6 flex max-w-4xl gap-8;
   }
   .services-layout {
