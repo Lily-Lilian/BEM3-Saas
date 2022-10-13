@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;800&family=Roboto:wght@400;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header {
+    @apply p-4 w-full bg-cover bg-none  bg-top;
+    background-image: url("/Assets/Images/Blur\ Gradient.png");
+  }
+  .header__navbar {
+    @apply flex  bg-white max-w-6xl mx-auto cursor-pointer;
+  }
+  .header__navbar-container {
+    @apply flex  flex-grow justify-between;
+  }
+  .header__navbar-lists {
+    @apply flex gap-4 items-center text-dark-color font-normal text-base;
+  }
+  .header__navbar-btn,
+  .header__sales-btn {
+    @apply bg-dark-color text-white rounded-md px-4 py-2;
+  }
+  .header__sales {
+    @apply flex flex-col gap-8;
+  }
+  .header__sales-contents {
+    @apply relative z-20 flex flex-col items-center text-center gap-4;
+  }
+  .header__sales-title {
+    @apply pt-40 text-dark-color font-bold text-5xl;
+  }
+  .header__sales-image {
+    @apply max-w-4xl mt-4;
+  }
+  .header__sales-tab {
+    @apply flex flex-col items-center gap-10;
+  }
+  .header__sales-tabcontrol {
+    @apply flex max-w-4xl px-12 py-2 flex-1 mx-auto bg-white-color rounded-xl;
+  }
+  .header__sales-input {
+    @apply bg-white-color border-none outline-none;
+  }
+  .solution-layout,
+  .features-layout {
+    @apply py-8;
+  }
+  .solution-layout__title {
+    @apply font-bold text-transparent text-xl bg-clip-text  text-center bg-gradient-to-r from-blur-blue to-gradient-blue;
+  }
+  .solution-layout__sub-title,
+  .features-layout__big-title,
+  .testimony-layout__title,
+  .view-price__title {
+    @apply font-bold text-3xl text-center py-2;
+  }
+  .solution-layout__container,
+  .features-layout__container {
+    @apply flex flex-col items-center;
+  }
+  .solution-layout__card,
+  .features-layout__card,
+  .service-layout__cards {
+    @apply max-w-6xl mx-auto grid grid-cols-3 bg-[rgba(224,228,252,0.5)] p-16 gap-8 rounded-xl mt-5;
+  }
+  .solution-layout__contents,
+  .features-layout__contents,
+  .service-layout__contents {
+    @apply flex flex-col gap-4 pt-4;
+  }
+  .solution-layout__item,
+  .features-layout__item {
+    @apply border-r flex flex-col gap-3;
+  }
+  .solution-layout__text-title,
+  .features-layout__title {
+    @apply text-2xl font-bold text-dark-color;
+  }
+  .solution-layout__paragraph {
+    @apply font-normal text-base text-dark-color;
+  }
+  .why-us,
+  .discover-section {
+    @apply px-12 py-10 flex justify-between items-center;
+  }
+  .why-us__container {
+    @apply flex flex-col gap-2 px-4;
+  }
+  .why-us__title,
+  .discover-section__title {
+    @apply font-bold text-transparent text-xl bg-clip-text bg-gradient-to-r from-blur-blue to-gradient-blue;
+  }
+  .why-us__sub-title,
+  .impression-layout__title,
+  .discover-section__description {
+    @apply font-bold text-4xl text-gray-900;
+  }
+  .why-us__paragraph,
+  .impression-layout__paragraph {
+    @apply py-4 font-normal text-base text-gray-900;
+  }
+  .why-us__lists,
+  .discover-section__lists {
+    @apply flex flex-col pt-12 mx-auto;
+  }
+  .discover-section__container {
+    @apply flex flex-col gap-4;
+  }
+  .discover-section_contents {
+    @apply flex flex-col items-center gap-4;
+  }
+  .discover-section__lists-contents {
+    @apply flex flex-col gap-4;
+  }
+  .why-us__item,
+  .discover-section__item {
+    @apply flex items-center gap-4;
+  }
+  .impression-layout {
+    @apply flex justify-between px-12 mt-20 bg-gradient-to-l from-slate-blue to-Sky-blue;
+  }
+  .impression-layout__container {
+    @apply flex flex-col items-center gap-4 py-20;
+  }
+  .impression-layout__btn {
+    @apply bg-dark-color text-white mt-4 rounded-xl px-6 py-2;
+  }
+  .impression-layout__image {
+    @apply max-w-xl py-12 px-12;
+  }
+  .impression-layout__logos {
+    @apply py-6 flex justify-between max-w-6xl mx-auto;
+  }
+  .testimony-layout__members {
+    @apply grid grid-cols-3 gap-6 max-w-5xl py-4 mx-auto;
+  }
+  .testimony-layout__cards {
+    @apply px-2 py-8 flex flex-col border border-background-color rounded-md;
+  }
+  .testimony-layout__card-contents {
+    @apply flex flex-col gap-5 items-center p-5;
+  }
+  .testimony-layout__user-details {
+    @apply flex flex-col gap-2;
+  }
+  .testimony-layout__info {
+    @apply flex flex-col  gap-4;
+  }
+  .view-price{
+    @apply flex flex-col gap-6 items-center py-8 mt-10;
+    background-image: url("/Assets/Images/Blur\ Gradient.png");
+  }
+  .view-price__container {
+    @apply flex flex-col items-center gap-3 justify-center text-center pb-20;
+  }
+  .view-price__btn{
+   @apply bg-gray-900 rounded-xl px-4 py-2 text-white-color;
+  }
+  .footer {
+    @apply bg-dark-color text-white-color;
+  }
+  .footer__content-container {
+    @apply flex flex-col py-10 px-12;
+  }
+  .footer__contents {
+    @apply flex justify-between;
+  }
+  .footer__socials {
+    @apply flex gap-2;
+  }
+  .footer__border {
+    @apply w-2/5 border-gray-400 border flex-1 h-[2px] mt-14;
+  }
+  .footer__list-item {
+    @apply grid grid-cols-5;
+  }
+  .footer__lists {
+    @apply flex flex-col gap-3;
+  }
+  .footer__title {
+    @apply font-bold text-base leading-6 py-2;
+  }
+  .footer__item {
+    @apply font-semibold text-sm leading-6 text-gray-500 cursor-pointer;
+  }
+  .footer__emails {
+    @apply bg-white rounded flex border border-solid border-white-color;
+  }
+  .footer__input {
+    @apply h-full block;
+  }
+  .footer__item--sm {
+    @apply text-xs font-normal;
+  }
+  .footer__bottom {
+    @apply flex gap-6;
+  }
+  .footer__socials {
+    @apply flex items-center;
+  }
+  .sales {
+    @apply bg-gradient-to-r from-white-b to-slate-rose;
+  }
+  .sales__contents {
+    @apply flex justify-between px-6 py-4 mt-5;
+  }
+  .sales__description {
+    @apply flex flex-col gap-4 space-y-2 pt-20;
+  }
+  .sales__btn {
+    @apply flex gap-6;
+  }
+  .sales__logos {
+    @apply py-4 px-6 flex max-w-4xl gap-8;
+  }
+  .services-layout {
+    @apply mt-10 flex flex-col items-center;
+    background-image: url("/Assets/Images/Blur\ Gradients.png");
+  }
+  .client-layout__container {
+    @apply flex justify-between p-40;
+  }
+  .client-layout__contents {
+    @apply flex flex-col gap-4  text-gray-900;
+  }
+  .client-layout__sub-title {
+    @apply h-32 font-bold text-5xl;
+  }
+  .client-layout__image {
+    @apply pr-40;
+  }
+  .client-layout__paragraph {
+    @apply h-24 not-italic font-normal text-base;
+  }
+  .price-section {
+    @apply flex flex-col items-center gap-6 text-center;
+  }
+  .price-section__title {
+    @apply font-bold text-5xl pt-20;
+  }
+  .btn-section {
+    @apply rounded-xl flex gap-6 p-2 text-base font-bold bg-gray-300;
+  }
+  .btn-section__key {
+    @apply pl-10 pr-6 pt-3 pb-3;
+  }
+  .btn-section__key--dark {
+    @apply bg-gray-900 rounded-xl opacity-10 text-white-color;
+  }
+  .price-section__card {
+    @apply w-full h-full p-10 antialiased text-gray-900;
+  }
+  .pricing-section__container {
+    @apply px-4 mx-auto;
+  }
+  .pricing-section__items {
+    @apply grid grid-cols-1 gap-10 pt-8 md:grid-cols-2 lg:grid-cols-3 justify-evenly;
+  }
+  .pricing-section__contents {
+    @apply w-full pt-6 pb-2 overflow-hidden text-center bg-white border rounded-2xl;
+  }
+  .pricing-section__title {
+    @apply flex justify-center w-full py-3 gap-3 border-b;
+  }
+  .pricing-section__lists {
+    @apply flex text-sm sm:justify-center lg:justify-center;
+  }
+  .pricing-section__product {
+    @apply flex w-full my-4;
+  }
+  .pricing-section__paragraph {
+    @apply text-center p-4;
+  }
+  .price-section__button {
+    @apply text-sm rounded-full  bg-dark-color  text-white flex  justify-center items-center  w-40 h-12 mx-auto;
+  }
+  .pricing-section__contents--content {
+    @apply bg-slate-green border border-blue;
+  }
+  .frequent-section {
+    @apply text-dark-color ml-auto mr-auto pl-12 pr-12 pt-16 pb-16 w-full;
+  }
+
+  .frequent__container {
+    @apply bg-opacity-100 flex rounded-xl bg-Sky-blue gap-1 p-12;
+  }
+  .frequent__title {
+    @apply text-5xl font-bold;
+  }
+  .frequent__header {
+    @apply flex flex-col gap-8  bg-opacity-100;
+  }
+  .frequent__subtitle {
+    @apply opacity-80 text-base font-normal;
+  }
+  .questions-layout {
+    @apply flex flex-col gap-6;
+  }
+  .questions-layout__container {
+    @apply flex flex-col justify-center gap-12 rounded-lg p-8 bg-white-color bg-opacity-100;
+  }
+  .questions__card {
+    @apply flex justify-between;
+  }
+
+  .questions__title {
+    @apply bg-opacity-100 text-2xl font-bold;
+  }
+
+  .questions__answer {
+    @apply bg-opacity-100 font-normal text-dark-color opacity-80;
+  }
+  .about-section {
+    @apply max-w-full;
+  }
+  .about-section {
+    @apply ml-auto mr-auto pl-12 pr-12 pt-16 pb-16;
+  }
+  .about-section__container {
+    @apply flex flex-col items-center gap-8 text-center;
+  }
+  .about-section__title {
+    @apply text-5xl font-bold bg-opacity-100 bg-white-color;
+  }
+  .about-section__subtitle {
+    @apply w-3/5 text-lg font-normal;
+  }
+  .about-section__list {
+    @apply grid grid-cols-3 gap-8;
+  }
+  .about-us {
+    @apply flex flex-col items-center pt-16 pb-16 text-center;
+  }
+  .about-us__title {
+    @apply text-2xl font-bold fill-transparent text-clip bg-clip-text;
+  }
+  .about-us__subtitle {
+    @apply bg-opacity-100 text-5xl font-bold;
+  }
+  .about-us__text {
+    @apply w-3/5 text-center font-normal bg-opacity-100;
+  }
+  .about-us__content {
+    @apply flex flex-col items-center gap-6;
+  }
+  .goal-vision {
+    @apply grid grid-cols-2 gap-4 p-4 bg-opacity-100 bg-slate-pink;
+  }
+  .goal-vision__title {
+    @apply text-clip fill-transparent bg-clip-text text-2xl font-bold;
+  }
+  .goal-vision__subtitle {
+    @apply text-5xl font-bold;
+  }
+  .goal-vision__paragraph {
+    @apply bg-opacity-100  text-base font-normal;
+  }
+  .goal-vision__item {
+    @apply flex flex-col gap-8;
+  }
+  .values {
+    @apply w-full;
+  }
+  .values {
+    @apply ml-auto mr-auto flex flex-col items-center gap-12 pl-12 pr-12 pt-12 pb-12;
+  }
+  .values__title {
+    @apply text-5xl font-bold bg-opacity-100;
+  }
+  .values__list {
+    @apply gap-6 rounded-lg p-12 right-0 flex justify-between items-center;
+  }
+  .values__menus {
+    @apply flex flex-col items-start gap-5 px-5;
+  }
+  .values__list__item--with-b {
+    @apply border-r bg-opacity-100 bg-sky-blues;
+  }
+  .values__description {
+    @apply text-2xl font-bold bg-sky-blues;
+  }
+  .values__description-text {
+    @apply text-lg font-normal bg-opacity-100 bg-sky-blues;
+  }
+  .team {
+    @apply w-full;
+  }
+  .team {
+    @apply ml-auto mr-auto flex items-start gap-6 pl-12 pr-12 pt-24 pb-24;
+  }
+  .team__header {
+    @apply w-2/5 py-10;
+  }
+  .team__members {
+    @apply grid-cols-3 grid flex-grow gap-5;
+  }
+  .team__text {
+    @apply text-lg font-normal text-dark-color bg-opacity-100 opacity-20;
+  }
+  .team__card {
+    @apply rounded-sm;
+  }
+  .team__name {
+    @apply bg-opacity-100 text-dark-color text-2xl font-bold;
+  }
+  .team__description {
+    @apply flex flex-col items-center py-2;
+  }
+  .team__job {
+    @apply opacity-20 bg-opacity-100 text-dark-color text-base font-normal;
+  }
+}
